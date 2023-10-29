@@ -36,6 +36,7 @@ function createSocket(host, port, useHttps) {
 
 function slowLorisAttack(host, port, sockets, useHttps, sleepTime) {
   console.log("⚡ slowLoris.js");
+  console.log("⚡ Created by @EdamAme-x / @amex2189")
   const socketList = [];
   let socketCount = sockets;
 
@@ -45,7 +46,7 @@ function slowLorisAttack(host, port, sockets, useHttps, sleepTime) {
   }
 
   setInterval(() => {
-    console.log("💌 Sending keep-alive headers...");
+    console.log("💌 Sending keep-alive headers");
     console.log(`📞 Socket count: ${socketList.length}`);
 
     socketList.forEach((socket, index) => {
