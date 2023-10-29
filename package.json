@@ -1,0 +1,25 @@
+{
+  "name": "slowloris",
+  "version": "1.0.0",
+  "description": "slowLoris DDoS on Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdamAme-x/slowLoris.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdamAme-x/slowLoris.js/issues"
+  },
+  "homepage": "https://github.com/EdamAme-x/slowLoris.js#readme",
+  "dependencies": {
+    "net": "^1.0.2",
+    "tls": "^0.0.1",
+    "yargs": "^17.7.2"
+  }
+}
