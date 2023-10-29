@@ -45,7 +45,7 @@ function slowLorisAttack(host, port, sockets, useHttps, sleepTime) {
   }
 
   setInterval(() => {
-    console.log("Sending keep-alive headers...");
+    console.log("💌 Sending keep-alive headers...");
     console.log(`📞 Socket count: ${socketList.length}`);
 
     socketList.forEach((socket, index) => {
