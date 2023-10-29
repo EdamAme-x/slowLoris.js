@@ -4,7 +4,6 @@
   "description": "slowLoris DDoS on Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./build.js",
     "builder": "npm run build && git add . && git commit -m 'build' && git push"
   },
