@@ -22,4 +22,4 @@ node index.js --host=krswkrs.xyz --port=443
 node index.js --host=krswkrs.xyz --sleeptime=0
 ```
 
-reference: [https://github.com/gkbrk/slowloris](https://github.com/gkbrk/slowloris)
+Python版: [https://github.com/gkbrk/slowloris](https://github.com/gkbrk/slowloris)
